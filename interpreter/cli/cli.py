@@ -80,6 +80,12 @@ arguments = [
         "help_text": "optionally enable safety mechanisms like code scanning; valid options are off, ask, and auto",
         "type": str,
         "choices": ["off", "ask", "auto"]
+    },
+    {
+        "name": "organization",
+        "nickname": "org",
+        "help_text": "optionally set the organization for your llm calls",
+        "type": str
     }
 ]
 

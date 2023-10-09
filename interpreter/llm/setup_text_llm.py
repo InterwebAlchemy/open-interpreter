@@ -111,6 +111,8 @@ def setup_text_llm(interpreter):
             litellm.max_budget = interpreter.max_budget
         if interpreter.debug_mode:
             litellm.set_verbose = True
+        if interpreter.organization:
+            litellm.organization = interpreter.organization
 
         # Report what we're sending to LiteLLM
         if interpreter.debug_mode:
